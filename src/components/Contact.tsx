@@ -36,7 +36,7 @@ export default function Contact() {
     }
 
     const whatsappMessage = [
-      "Ola, vim pelo seu portfolio.",
+      "Olá, vim pelo seu portfólio.",
       "",
       `Nome: ${normalizedName}`,
       `Email: ${normalizedEmail}`,
@@ -66,9 +66,9 @@ export default function Contact() {
           </h2>
 
           <p className="mt-6 max-w-xl text-sm leading-7 text-[#64748b] md:text-base">
-            Estou disponivel para oportunidades como desenvolvedor full stack,
-            criacao de aplicacoes web, melhorias em interfaces, integracoes e
-            projetos com foco em performance e experiencia do usuario.
+            Estou disponível para oportunidades como desenvolvedor full stack,
+            criação de aplicações web, melhorias em interfaces, integrações e
+            projetos com foco em performance e experiência do usuário.
           </p>
 
           <div className="mt-8 space-y-3 text-sm text-[#0f172a]">
@@ -84,7 +84,7 @@ export default function Contact() {
             </p>
             <p className="gap-1 md:flex">
               <span className="font-semibold">GitHub:</span>
-              <a href="https://www.linkedin.com/in/viniciusgustavoti/" className="">
+              <a href="https://github.com/ViniciusHub" className="">
                 https://github.com/ViniciusHub
               </a>
             </p>
@@ -162,7 +162,7 @@ export default function Contact() {
                 className="w-full rounded-xl border border-black/10 px-4 py-3 text-sm outline-none transition focus:border-[#0b2341]"
               />
               <p className="mt-2 text-xs text-[#64748b]">
-                Minimo de 10 caracteres.
+                Mínimo de 10 caracteres.
               </p>
             </div>
 

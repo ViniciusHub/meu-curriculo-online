@@ -4,38 +4,38 @@ const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
 
 export default function Hero() {
   return (
-    <section id="sobre" className="bg-[#f3f3f5]">
+    <section id="sobre" className="bg-[var(--color-surface)]">
       <div className="mx-auto grid max-w-7xl items-center gap-12 px-6 py-16 md:grid-cols-[1.15fr_0.85fr] md:py-24">
         <div className="order-2 md:order-1">
-          <p className="mb-3 text-xs font-semibold uppercase tracking-[0.25em] text-[#64748b]">
+          <p className="mb-3 text-xs font-semibold uppercase tracking-[0.25em] text-[var(--color-text-soft)]">
             Full Stack Developer
           </p>
 
-          <h1 className="max-w-3xl text-3xl font-bold leading-[1.15] text-[#0f172a] md:text-5xl">
+          <h1 className="max-w-3xl text-3xl font-bold leading-[1.15] text-[var(--color-text)] md:text-5xl">
             Desenvolvedor full stack com foco em{" "}
-            <span className="text-primary-container text-[#0f3d69]">
-              solucoes completas, performance e boa experiencia
+            <span className="text-primary-container text-[var(--color-primary-strong)]">
+              soluções completas, performance e boa experiência
             </span>
           </h1>
 
-          <p className="mt-6 max-w-2xl text-base leading-7 text-[#475569] md:text-lg">
-            Desenvolvedor full stack com experiencia em interfaces modernas,
-            integracoes, e-commerce e desenvolvimento de aplicacoes do front ao
-            back-end, com foco em performance, clareza visual e boa experiencia
-            do usuario.
+          <p className="mt-6 max-w-2xl text-base leading-7 text-[var(--color-text-muted)] md:text-lg">
+            Desenvolvedor full stack com experiência em interfaces modernas,
+            integrações, e-commerce e desenvolvimento de aplicações do front ao
+            back-end, com foco em performance, clareza visual e boa experiência
+            do usuário.
           </p>
 
           <div className="mt-8 flex flex-col gap-4 sm:flex-row">
             <a
               href="#projetos"
-              className="rounded-md bg-[#59e3d2] px-6 py-3 text-sm font-semibold text-[#1A1C1F] transition hover:opacity-90"
+              className="rounded-md bg-[var(--color-accent)] px-6 py-3 text-sm font-semibold text-[#1A1C1F] transition hover:opacity-90"
             >
               Ver projetos
             </a>
 
             <a
               href="#contato"
-              className="rounded-md border border-transparent bg-[#e8e8ec] px-6 py-3 text-sm font-semibold text-[#1A1C1F] transition hover:bg-[#e2e2e6]"
+              className="rounded-md border border-transparent bg-[var(--color-surface-muted)] px-6 py-3 text-sm font-semibold text-[#1A1C1F] transition hover:opacity-90"
             >
               Falar comigo
             </a>
@@ -44,7 +44,7 @@ export default function Hero() {
 
         <div className="order-1 md:order-2 md:justify-self-end">
           <div className="relative mx-auto w-full max-w-md md:max-w-lg">
-            <div className="absolute -left-3 -top-3 h-20 w-20 rounded-xl border-[6px] border-[#59e3d2]" />
+            <div className="absolute -left-3 -top-3 h-20 w-20 rounded-xl border-[6px] border-[var(--color-accent)]" />
             <div className="relative overflow-hidden rounded-2xl bg-[#d9d9d9] shadow-sm">
               <Image
                 src={`${basePath}/foto-perfil.png`}

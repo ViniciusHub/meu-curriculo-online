@@ -4,7 +4,7 @@ const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
 
 export default function Header() {
   return (
-    <header className="w-full border-b border-black/5 bg-[#f3f3f5]">
+    <header className="w-full border-b border-[var(--color-border-soft)] bg-[var(--color-surface)]">
       <div className="mx-auto grid max-w-7xl grid-cols-[auto_1fr_auto] items-center px-6 py-5 md:grid-cols-[1fr_auto_1fr]">
         <a href="#sobre" className="flex items-center">
           <Image
@@ -20,29 +20,29 @@ export default function Header() {
 
         <nav
           aria-label="Navegacao principal"
-          className="hidden justify-center gap-8 text-sm text-[#475569] md:flex"
+          className="hidden justify-center gap-8 text-sm text-[var(--color-text-muted)] md:flex"
         >
           <a
             href="#sobre"
-            className="inline-block origin-center border-b border-transparent text-[14px] font-semibold transition-all duration-200 hover:scale-[1.43] hover:border-[#1E3A8A] hover:text-[#1E3A8A]"
+            className="inline-block origin-center border-b border-transparent text-[14px] font-semibold transition-all duration-200 hover:scale-[1.43] hover:border-[var(--color-primary)] hover:text-[var(--color-primary)]"
           >
             Sobre
           </a>
           <a
             href="#experiencia"
-            className="inline-block origin-center border-b border-transparent text-[14px] font-semibold transition-all duration-200 hover:scale-[1.43] hover:border-[#1E3A8A] hover:text-[#1E3A8A]"
+            className="inline-block origin-center border-b border-transparent text-[14px] font-semibold transition-all duration-200 hover:scale-[1.43] hover:border-[var(--color-primary)] hover:text-[var(--color-primary)]"
           >
-            Experiencia
+            Experiência
           </a>
           <a
             href="#skills"
-            className="inline-block origin-center border-b border-transparent text-[14px] font-semibold transition-all duration-200 hover:scale-[1.43] hover:border-[#1E3A8A] hover:text-[#1E3A8A]"
+            className="inline-block origin-center border-b border-transparent text-[14px] font-semibold transition-all duration-200 hover:scale-[1.43] hover:border-[var(--color-primary)] hover:text-[var(--color-primary)]"
           >
             Skills
           </a>
           <a
             href="#projetos"
-            className="inline-block origin-center border-b border-transparent text-[14px] font-semibold transition-all duration-200 hover:scale-[1.43] hover:border-[#1E3A8A] hover:text-[#1E3A8A]"
+            className="inline-block origin-center border-b border-transparent text-[14px] font-semibold transition-all duration-200 hover:scale-[1.43] hover:border-[var(--color-primary)] hover:text-[var(--color-primary)]"
           >
             Projetos
           </a>
@@ -50,7 +50,7 @@ export default function Header() {
 
         <a
           href="#contato"
-          className="justify-self-end rounded-md bg-[#0b2341] px-4 py-2 text-sm font-medium text-white transition hover:opacity-90"
+          className="justify-self-end rounded-md bg-[var(--color-primary)] px-4 py-2 text-sm font-medium text-white transition hover:opacity-90"
         >
           Contato
         </a>

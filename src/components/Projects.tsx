@@ -10,8 +10,9 @@ const projects = [
     title: "E-commerce Profissional",
     category: "Full Stack",
     description:
-      "Pagina desenvolvida com foco em apresentacao profissional, hierarquia visual clara, responsividade, integracao com contato e base pronta para evolucao.",
+      "Página desenvolvida com foco em apresentação profissional, hierarquia visual clara, responsividade, integração com contato e base pronta para evolução.",
     image: `${basePath}/images/projects/projeto-1.png`,
+    url: "https://nutra40.commercesuite.com.br/",
     alt: "Preview do projeto 1",
     bgClass: "bg-[#cfe8df]",
   },
@@ -19,8 +20,9 @@ const projects = [
     title: "E-commerce Profissional",
     category: "Full Stack",
     description:
-      "Estrutura para loja virtual com foco em navegacao, apresentacao de produtos, organizacao de conteudo e integracao com o fluxo de compra.",
+      "Estrutura para loja virtual com foco em navegação, apresentação de produtos, organização de conteúdo e integração com o fluxo de compra.",
     image: `${basePath}/images/projects/projeto-2.png`,
+    url: "https://www.versatilacessorios.com.br/",
     alt: "Preview do projeto 2",
     bgClass: "bg-[#6da8b7]",
   },
@@ -28,8 +30,9 @@ const projects = [
     title: "E-commerce Profissional",
     category: "Full Stack",
     description:
-      "Estrutura para loja virtual com foco em navegacao, apresentacao de produtos, organizacao de conteudo e integracao com o fluxo de compra.",
+      "Estrutura para loja virtual com foco em navegação, apresentação de produtos, organização de conteúdo e integração com o fluxo de compra.",
     image: `${basePath}/images/projects/projeto-3.png`,
+    url: "https://www.oticasonline.com.br/",
     alt: "Preview do projeto 3",
     bgClass: "bg-[#e8dfd3]",
   },
@@ -78,23 +81,23 @@ export default function Projects() {
 
   return (
     <>
-      <section id="projetos" className="bg-[#f3f3f5] py-20">
+      <section id="projetos" className="bg-[var(--color-surface)] py-20">
         <div className="mx-auto max-w-7xl px-6">
           <div className="mb-12 flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
             <div>
-              <h2 className="text-3xl font-bold text-[#0f172a] md:text-4xl">
+              <h2 className="text-3xl font-bold text-[var(--color-text)] md:text-4xl">
                 Projetos em Destaque
               </h2>
-              <p className="mt-3 max-w-2xl text-sm leading-7 text-[#64748b] md:text-base">
+              <p className="mt-3 max-w-2xl text-sm leading-7 text-[var(--color-text-soft)] md:text-base">
                 Alguns trabalhos e tipos de projeto que representam minha
-                atuacao full stack, unindo interface, regras de negocio,
-                integracoes e experiencia do usuario.
+                atuação full stack, unindo interface, regras de negócio,
+                integrações e experiência do usuário.
               </p>
             </div>
 
             <a
               href="#contato"
-              className="text-sm font-semibold text-[#0b2341] transition hover:opacity-70"
+              className="text-sm font-semibold text-[var(--color-primary)] transition hover:opacity-70"
             >
               Falar sobre um projeto
             </a>
@@ -104,7 +107,7 @@ export default function Projects() {
             {projects.map((project) => (
               <article
                 key={project.image}
-                className="flex h-full flex-col overflow-hidden rounded-2xl bg-white shadow-sm"
+                className="flex h-full flex-col overflow-hidden rounded-2xl bg-[var(--color-card)] shadow-sm"
               >
                 <button
                   type="button"
@@ -120,9 +123,9 @@ export default function Projects() {
                     sizes="(min-width: 1280px) 30vw, (min-width: 768px) 45vw, 100vw"
                   />
 
-                  <div className="absolute inset-0 bg-[#0f172a]/0 transition duration-300 group-hover:bg-[#0f172a]/40" />
+                  <div className="absolute inset-0 bg-[var(--color-text)]/0 transition duration-300 group-hover:bg-[var(--color-text)]/40" />
 
-                  <div className="absolute bottom-3 right-3 inline-flex items-center gap-2 rounded-full bg-white/92 px-3 py-2 text-xs font-semibold text-[#0f172a] shadow-sm transition duration-300 group-hover:scale-105">
+                  <div className="absolute bottom-3 right-3 inline-flex items-center gap-2 rounded-full bg-white/92 px-3 py-2 text-xs font-semibold text-[var(--color-text)] shadow-sm transition duration-300 group-hover:scale-105">
                     <ExpandIcon />
                     Ver maior
                   </div>
@@ -130,22 +133,24 @@ export default function Projects() {
 
                 <div className="flex flex-1 flex-col p-6">
                   <div className="mb-3 flex items-center justify-between gap-4">
-                    <h3 className="text-lg font-semibold text-[#0f172a]">
+                    <h3 className="text-lg font-semibold text-[var(--color-text)]">
                       {project.title}
                     </h3>
-                    <span className="text-[11px] font-semibold uppercase tracking-[0.18em] text-[#64748b]">
+                    <span className="text-[11px] font-semibold uppercase tracking-[0.18em] text-[var(--color-text-soft)]">
                       {project.category}
                     </span>
                   </div>
 
-                  <p className="text-sm leading-7 text-[#64748b]">
+                  <p className="text-sm leading-7 text-[var(--color-text-soft)]">
                     {project.description}
                   </p>
 
                   <div className="mt-auto pt-8">
                     <a
-                      href="#contato"
-                      className="inline-flex w-fit self-start rounded-md bg-[#f3f4f6] px-4 py-2 text-sm font-medium text-[#0f172a] transition hover:bg-[#e5e7eb]"
+                      href={project.url}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="inline-flex w-fit self-start rounded-md bg-[var(--color-surface-soft)] px-4 py-2 text-sm font-medium text-[var(--color-text)] transition hover:opacity-90"
                     >
                       Ver projeto
                     </a>
@@ -163,7 +168,7 @@ export default function Projects() {
           onClick={() => setSelectedProject(null)}
           role="dialog"
           aria-modal="true"
-          aria-label={`Visualizacao ampliada de ${selectedProject.title}`}
+          aria-label={`Visualização ampliada de ${selectedProject.title}`}
         >
           <div
             className="relative w-full max-w-7xl"
@@ -173,7 +178,7 @@ export default function Projects() {
               type="button"
               onClick={() => setSelectedProject(null)}
               className="absolute right-3 top-3 z-10 cursor-pointer rounded-full bg-white/90 px-3 py-1 text-sm font-semibold text-[#0f172a] shadow-sm transition hover:bg-white"
-              aria-label="Fechar visualizacao"
+              aria-label="Fechar visualização"
             >
               Fechar
             </button>

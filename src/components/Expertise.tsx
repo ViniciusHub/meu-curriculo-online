@@ -7,8 +7,8 @@ export default function Expertise() {
             Core Expertise
           </h2>
           <p className="mt-4 text-sm leading-7 text-[#64748b] md:text-base">
-            Experiencia em desenvolvimento full stack, interfaces modernas,
-            organizacao de sistemas, integracoes e construcoes com foco em
+            Experiência em desenvolvimento full stack, interfaces modernas,
+            organização de sistemas, integrações e construções com foco em
             usabilidade.
           </p>
         </div>
@@ -22,8 +22,8 @@ export default function Expertise() {
               Full Stack
             </h3>
             <p className="mt-3 text-sm leading-7 text-[#64748b]">
-              Desenvolvimento de aplicacoes completas com foco em interface,
-              logica de negocio, integracoes e experiencia do usuario.
+              Desenvolvimento de aplicações completas com foco em interface,
+              lógica de negócio, integrações e experiência do usuário.
             </p>
           </div>
 
@@ -35,8 +35,8 @@ export default function Expertise() {
               Arquitetura
             </h3>
             <p className="mt-3 text-sm leading-7 text-[#64748b]">
-              Organizacao de projetos com componentes, padroes reutilizaveis e
-              estrutura preparada para crescer com manutencao simples.
+              Organização de projetos com componentes, padrões reutilizáveis e
+              estrutura preparada para crescer com manutenção simples.
             </p>
           </div>
 
@@ -48,8 +48,8 @@ export default function Expertise() {
               UI / UX
             </h3>
             <p className="mt-3 text-sm leading-7 text-[#64748b]">
-              Estruturacao de paginas intuitivas, limpas e funcionais, pensando
-              em navegacao, conversao e clareza na comunicacao.
+              Estruturação de páginas intuitivas, limpas e funcionais, pensando
+              em navegação, conversão e clareza na comunicação.
             </p>
           </div>
 
@@ -61,8 +61,8 @@ export default function Expertise() {
               Performance
             </h3>
             <p className="mt-3 text-sm leading-7 text-[#64748b]">
-              Ajustes de estrutura, codigo e fluxo para entregar paginas e
-              sistemas mais rapidos, leves e eficientes.
+              Ajustes de estrutura, código e fluxo para entregar páginas e
+              sistemas mais rápidos, leves e eficientes.
             </p>
           </div>
         </div>

@@ -12,13 +12,13 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
-  title: "Vinicius Oliveira | Curriculo Online",
+  title: "Vinicius Oliveira | Currículo Online",
   description:
-    "Portfolio profissional de Vinicius Oliveira, desenvolvedor full stack com experiencia em interfaces modernas, integracoes, e-commerce e performance.",
+    "Portfólio profissional de Vinicius Oliveira, desenvolvedor full stack com experiência em interfaces modernas, integrações, e-commerce e performance.",
   keywords: [
     "Vinicius Oliveira",
     "desenvolvedor full stack",
-    "portfolio",
+    "portfólio",
     "Next.js",
     "React",
     "e-commerce",
@@ -32,19 +32,19 @@ export const metadata: Metadata = {
     follow: true,
   },
   openGraph: {
-    title: "Vinicius Oliveira | Curriculo Online",
+    title: "Vinicius Oliveira | Currículo Online",
     description:
-      "Portfolio profissional de Vinicius Oliveira, desenvolvedor full stack com experiencia em interfaces modernas, integracoes, e-commerce e performance.",
+      "Portfólio profissional de Vinicius Oliveira, desenvolvedor full stack com experiência em interfaces modernas, integrações, e-commerce e performance.",
     url: siteUrl,
-    siteName: "Vinicius Oliveira | Curriculo Online",
+    siteName: "Vinicius Oliveira | Currículo Online",
     locale: "pt_BR",
     type: "website",
   },
   twitter: {
     card: "summary",
-    title: "Vinicius Oliveira | Curriculo Online",
+    title: "Vinicius Oliveira | Currículo Online",
     description:
-      "Portfolio profissional de Vinicius Oliveira, desenvolvedor full stack com experiencia em interfaces modernas, integracoes, e-commerce e performance.",
+      "Portfólio profissional de Vinicius Oliveira, desenvolvedor full stack com experiência em interfaces modernas, integrações, e-commerce e performance.",
   },
   icons: {
     icon: `${basePath}/logo/logo.ico`,

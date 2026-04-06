@@ -1,5 +1,21 @@
 @import "tailwindcss";
 
+:root {
+  --color-page: #f4f3f7;
+  --color-surface: #f3f3f5;
+  --color-surface-muted: #e8e8ec;
+  --color-surface-soft: #f3f4f6;
+  --color-card: #ffffff;
+  --color-text: #0f172a;
+  --color-text-muted: #475569;
+  --color-text-soft: #64748b;
+  --color-primary: #0b2341;
+  --color-primary-strong: #0f3d69;
+  --color-accent: #59e3d2;
+  --color-border-soft: rgb(0 0 0 / 0.05);
+  --color-input-border: rgb(0 0 0 / 0.1);
+}
+
 * {
   box-sizing: border-box;
 }
@@ -10,6 +26,6 @@ html {
 
 body {
   margin: 0;
-  background: #f4f3f7;
-  color: #111827;
+  background: var(--color-page);
+  color: var(--color-text);
 }

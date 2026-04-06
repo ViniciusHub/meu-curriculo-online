@@ -4,7 +4,7 @@ export default function Experience() {
       <div className="mx-auto max-w-7xl px-6">
         <div className="mb-12">
           <h2 className="text-3xl font-bold text-[#0f172a] md:text-4xl">
-            Experiencia
+            Experiência
           </h2>
           <div className="mt-3 h-1 w-16 rounded-full bg-[#0b2341]" />
         </div>
@@ -29,10 +29,10 @@ export default function Experience() {
 
             <div className="rounded-2xl bg-white p-6 shadow-sm">
               <p className="text-sm leading-7 text-[#475569]">
-                Desenvolvo solucoes completas para WordPress, Wake, Tray e
-                Nuvemshop, atuando na interface, integracao de funcionalidades e
-                evolucao tecnica dos projetos com foco em usabilidade,
-                performance e experiencia do usuario.
+                Desenvolvo soluções completas para WordPress, Wake, Tray e
+                Nuvemshop, atuando na interface, integração de funcionalidades e
+                evolução técnica dos projetos com foco em usabilidade,
+                performance e experiência do usuário.
               </p>
             </div>
           </div>
@@ -56,9 +56,9 @@ export default function Experience() {
 
             <div className="rounded-2xl bg-white p-6 shadow-sm">
               <p className="text-sm leading-7 text-[#475569]">
-                Atuei em paginas institucionais, e-commerce e evolucao de
-                sistemas web, cuidando de ajustes visuais, organizacao de
-                secoes, responsividade, integracoes e entrega de novas
+                Atuei em páginas institucionais, e-commerce e evolução de
+                sistemas web, cuidando de ajustes visuais, organização de
+                seções, responsividade, integrações e entrega de novas
                 funcionalidades de ponta a ponta.
               </p>
             </div>
@@ -70,7 +70,7 @@ export default function Experience() {
                 2018 - 2020
               </p>
               <h3 className="mt-2 text-xl font-semibold text-[#0f172a]">
-                Inicio da Trajetoria
+                Início da Trajetória
               </h3>
               <p className="mt-1 text-sm font-medium uppercase tracking-[0.15em] text-[#64748b]">
                 Freelancer / Estudos / Emprego
@@ -83,9 +83,9 @@ export default function Experience() {
 
             <div className="rounded-2xl bg-white p-6 shadow-sm">
               <p className="text-sm leading-7 text-[#475569]">
-                Consolidei minha base tecnica em HTML, CSS, JavaScript e logica
-                de programacao, construindo interfaces para web e ampliando a
-                visao sobre desenvolvimento completo de produtos digitais.
+                Consolidei minha base técnica em HTML, CSS, JavaScript e lógica
+                de programação, construindo interfaces para web e ampliando a
+                visão sobre desenvolvimento completo de produtos digitais.
               </p>
             </div>
           </div>
