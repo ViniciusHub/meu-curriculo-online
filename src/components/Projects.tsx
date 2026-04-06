@@ -3,13 +3,15 @@
 import Image from "next/image";
 import { useEffect, useState } from "react";
 
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
+
 const projects = [
   {
     title: "E-commerce Profissional",
     category: "Full Stack",
     description:
       "Pagina desenvolvida com foco em apresentacao profissional, hierarquia visual clara, responsividade, integracao com contato e base pronta para evolucao.",
-    image: "/images/projects/projeto-1.png",
+    image: `${basePath}/images/projects/projeto-1.png`,
     alt: "Preview do projeto 1",
     bgClass: "bg-[#cfe8df]",
   },
@@ -18,7 +20,7 @@ const projects = [
     category: "Full Stack",
     description:
       "Estrutura para loja virtual com foco em navegacao, apresentacao de produtos, organizacao de conteudo e integracao com o fluxo de compra.",
-    image: "/images/projects/projeto-2.png",
+    image: `${basePath}/images/projects/projeto-2.png`,
     alt: "Preview do projeto 2",
     bgClass: "bg-[#6da8b7]",
   },
@@ -27,7 +29,7 @@ const projects = [
     category: "Full Stack",
     description:
       "Estrutura para loja virtual com foco em navegacao, apresentacao de produtos, organizacao de conteudo e integracao com o fluxo de compra.",
-    image: "/images/projects/projeto-3.png",
+    image: `${basePath}/images/projects/projeto-3.png`,
     alt: "Preview do projeto 3",
     bgClass: "bg-[#e8dfd3]",
   },

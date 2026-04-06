@@ -1,5 +1,7 @@
 import Image from "next/image";
 
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
+
 export default function Hero() {
   return (
     <section id="sobre" className="bg-[#f3f3f5]">
@@ -45,7 +47,7 @@ export default function Hero() {
             <div className="absolute -left-3 -top-3 h-20 w-20 rounded-xl border-[6px] border-[#59e3d2]" />
             <div className="relative overflow-hidden rounded-2xl bg-[#d9d9d9] shadow-sm">
               <Image
-                src="/foto-perfil.png"
+                src={`${basePath}/foto-perfil.png`}
                 alt="Foto de Vinicius Oliveira"
                 width={500}
                 height={560}

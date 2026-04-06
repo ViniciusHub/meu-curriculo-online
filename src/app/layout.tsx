@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://example.github.io";
 
 const inter = Inter({
@@ -46,9 +47,9 @@ export const metadata: Metadata = {
       "Portfolio profissional de Vinicius Oliveira, desenvolvedor full stack com experiencia em interfaces modernas, integracoes, e-commerce e performance.",
   },
   icons: {
-    icon: "/logo/logo.ico",
-    shortcut: "/logo/logo.ico",
-    apple: "/logo/logo.png",
+    icon: `${basePath}/logo/logo.ico`,
+    shortcut: `${basePath}/logo/logo.ico`,
+    apple: `${basePath}/logo/logo.png`,
   },
 };
 

@@ -1,12 +1,14 @@
 import Image from "next/image";
 
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
+
 export default function Header() {
   return (
     <header className="w-full border-b border-black/5 bg-[#f3f3f5]">
       <div className="mx-auto grid max-w-7xl grid-cols-[auto_1fr_auto] items-center px-6 py-5 md:grid-cols-[1fr_auto_1fr]">
         <a href="#sobre" className="flex items-center">
           <Image
-            src="/logo/logo-v5.png"
+            src={`${basePath}/logo/logo-v5.png`}
             alt="Logo de Vinicius Oliveira"
             width={226}
             height={100}
