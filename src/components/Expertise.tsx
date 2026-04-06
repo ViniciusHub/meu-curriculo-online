@@ -1,6 +1,6 @@
 export default function Expertise() {
   return (
-    <section id="skills" className="bg-[#f3f3f5] py-20">
+    <section id="skills" className="bg-[#f3f3f5] py-10 md:py-20">
       <div className="mx-auto max-w-7xl px-6">
         <div className="mx-auto max-w-2xl text-center">
           <h2 className="text-3xl font-bold text-[#0f172a] md:text-4xl">
@@ -13,7 +13,7 @@ export default function Expertise() {
           </p>
         </div>
 
-        <div className="mt-12 grid gap-6 sm:grid-cols-2 xl:grid-cols-4">
+        <div className="mt-10 grid gap-6 sm:grid-cols-2 xl:grid-cols-4 md:mt-12">
           <div className="rounded-2xl bg-white p-6 shadow-sm">
             <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-lg bg-[#e8f0ff] text-lg">
               DEV

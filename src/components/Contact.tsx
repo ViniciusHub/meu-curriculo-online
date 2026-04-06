@@ -54,9 +54,9 @@ export default function Contact() {
   };
 
   return (
-    <section id="contato" className="bg-[#f3f3f5] py-20">
-      <div className="mx-auto grid max-w-7xl gap-10 px-6 md:grid-cols-2">
-        <div>
+    <section id="contato" className="bg-[#f3f3f5] py-10 md:py-20">
+      <div className="mx-auto grid max-w-7xl gap-10 px-4 md:grid-cols-2 md:px-6">
+        <div className="min-w-0">
           <p className="text-sm font-semibold uppercase tracking-[0.25em] text-[#64748b]">
             Contato
           </p>
@@ -71,27 +71,30 @@ export default function Contact() {
             projetos com foco em performance e experiência do usuário.
           </p>
 
-          <div className="mt-8 space-y-3 text-sm text-[#0f172a]">
+          <div className="mt-8 space-y-4 text-sm text-[#0f172a]">
             <p className="gap-1 md:flex">
               <span className="font-semibold">Email:</span>
-              desenvolveloja@gmail.com
+              <span className="break-all">desenvolveloja@gmail.com</span>
             </p>
             <p className="gap-1 md:flex">
               <span className="font-semibold">LinkedIn:</span>
-              <a href="https://www.linkedin.com/in/viniciusgustavoti/" className="">
+              <a
+                href="https://www.linkedin.com/in/viniciusgustavoti/"
+                className="break-all"
+              >
                 https://www.linkedin.com/in/viniciusgustavoti/
               </a>
             </p>
             <p className="gap-1 md:flex">
               <span className="font-semibold">GitHub:</span>
-              <a href="https://github.com/ViniciusHub" className="">
+              <a href="https://github.com/ViniciusHub" className="break-all">
                 https://github.com/ViniciusHub
               </a>
             </p>
           </div>
         </div>
 
-        <div className="rounded-3xl bg-white p-8 shadow-sm">
+        <div className="min-w-0 rounded-3xl bg-white p-5 shadow-sm sm:p-6 md:p-8">
           <form className="space-y-5" onSubmit={handleSubmit}>
             <input
               type="text"
@@ -120,7 +123,7 @@ export default function Contact() {
                 maxLength={maxNameLength}
                 minLength={2}
                 required
-                className="w-full rounded-xl border border-black/10 px-4 py-3 text-sm outline-none transition focus:border-[#0b2341]"
+                className="w-full min-w-0 rounded-xl border border-black/10 px-4 py-3 text-sm outline-none transition focus:border-[#0b2341]"
               />
             </div>
 
@@ -139,7 +142,7 @@ export default function Contact() {
                 onChange={(event) => setEmail(event.target.value)}
                 maxLength={maxEmailLength}
                 required
-                className="w-full rounded-xl border border-black/10 px-4 py-3 text-sm outline-none transition focus:border-[#0b2341]"
+                className="w-full min-w-0 rounded-xl border border-black/10 px-4 py-3 text-sm outline-none transition focus:border-[#0b2341]"
               />
             </div>
 
@@ -159,7 +162,7 @@ export default function Contact() {
                 maxLength={maxMessageLength}
                 minLength={10}
                 required
-                className="w-full rounded-xl border border-black/10 px-4 py-3 text-sm outline-none transition focus:border-[#0b2341]"
+                className="w-full min-w-0 rounded-xl border border-black/10 px-4 py-3 text-sm outline-none transition focus:border-[#0b2341]"
               />
               <p className="mt-2 text-xs text-[#64748b]">
                 Mínimo de 10 caracteres.
@@ -169,7 +172,7 @@ export default function Contact() {
             <button
               type="submit"
               disabled={!isFormValid}
-              className="cursor-pointer rounded-xl bg-[#0b2341] px-6 py-3 text-sm font-semibold text-white transition hover:opacity-90 disabled:cursor-not-allowed disabled:opacity-50"
+              className="inline-flex w-full items-center justify-center rounded-xl bg-[var(--color-button-bg)] px-6 py-3 text-sm font-semibold text-[var(--color-button-text)] transition hover:opacity-90 disabled:cursor-not-allowed disabled:opacity-50 sm:w-auto"
             >
               Enviar mensagem no WhatsApp
             </button>

@@ -81,9 +81,9 @@ export default function Projects() {
 
   return (
     <>
-      <section id="projetos" className="bg-[var(--color-surface)] py-20">
+      <section id="projetos" className="bg-[var(--color-surface)] py-10 md:py-20">
         <div className="mx-auto max-w-7xl px-6">
-          <div className="mb-12 flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
+          <div className="mb-10 flex flex-col gap-4 md:mb-12 md:flex-row md:items-end md:justify-between">
             <div>
               <h2 className="text-3xl font-bold text-[var(--color-text)] md:text-4xl">
                 Projetos em Destaque
@@ -133,10 +133,10 @@ export default function Projects() {
 
                 <div className="flex flex-1 flex-col p-6">
                   <div className="mb-3 flex items-center justify-between gap-4">
-                    <h3 className="text-lg font-semibold text-[var(--color-text)]">
+                    <h3 className="text-base font-semibold text-[var(--color-text)] md:text-lg">
                       {project.title}
                     </h3>
-                    <span className="text-[11px] font-semibold uppercase tracking-[0.18em] text-[var(--color-text-soft)]">
+                    <span className="text-[10px] font-semibold uppercase tracking-[0.16em] text-[var(--color-text-soft)] md:text-[11px] md:tracking-[0.18em]">
                       {project.category}
                     </span>
                   </div>

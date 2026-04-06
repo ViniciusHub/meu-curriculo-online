@@ -5,15 +5,15 @@ const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
 export default function Header() {
   return (
     <header className="w-full border-b border-[var(--color-border-soft)] bg-[var(--color-surface)]">
-      <div className="mx-auto grid max-w-7xl grid-cols-[auto_1fr_auto] items-center px-6 py-5 md:grid-cols-[1fr_auto_1fr]">
-        <a href="#sobre" className="flex items-center">
+      <div className="mx-auto grid max-w-7xl grid-cols-[minmax(0,1fr)_auto] items-center gap-3 px-4 py-4 md:grid-cols-[1fr_auto_1fr] md:gap-4 md:px-6 md:py-5">
+        <a href="#sobre" className="min-w-0 overflow-hidden flex items-center">
           <Image
             src={`${basePath}/logo/logo-v5.png`}
             alt="Logo de Vinicius Oliveira"
             width={226}
             height={100}
             className="block"
-            style={{ width: "auto", height: "56px" }}
+            style={{ width: "auto", height: "44px" }}
             priority
           />
         </a>
@@ -50,7 +50,7 @@ export default function Header() {
 
         <a
           href="#contato"
-          className="justify-self-end rounded-md bg-[var(--color-primary)] px-4 py-2 text-sm font-medium text-white transition hover:opacity-90"
+          className="justify-self-end whitespace-nowrap rounded-md bg-[var(--color-button-bg)] px-3 py-2 text-sm font-medium text-[var(--color-button-text)] transition hover:opacity-90 md:px-4"
         >
           Contato
         </a>
