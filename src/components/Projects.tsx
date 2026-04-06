@@ -132,11 +132,11 @@ export default function Projects() {
                 </button>
 
                 <div className="flex flex-1 flex-col p-6">
-                  <div className="mb-3 flex items-center justify-between gap-4">
-                    <h3 className="text-base font-semibold text-[var(--color-text)] md:text-lg">
+                  <div className="mb-3 flex min-h-[44px] items-center justify-between gap-2 sm:min-h-[52px]">
+                    <h3 className="pr-2 text-[14px] font-semibold leading-5 text-[var(--color-text)] sm:text-base md:text-lg">
                       {project.title}
                     </h3>
-                    <span className="text-[10px] font-semibold uppercase tracking-[0.16em] text-[var(--color-text-soft)] md:text-[11px] md:tracking-[0.18em]">
+                    <span className="shrink-0 text-[9px] font-semibold uppercase tracking-[0.12em] text-[var(--color-text-soft)] sm:text-[10px] sm:tracking-[0.16em] md:text-[11px] md:tracking-[0.18em]">
                       {project.category}
                     </span>
                   </div>
