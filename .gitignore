@@ -37,12 +37,6 @@ yarn-error.log*
 # vercel
 .vercel
 
-# codex
-.codex/
-.agents/
-codex-debug.log*
-codex-error.log*
-
 # typescript
 *.tsbuildinfo
 next-env.d.ts
